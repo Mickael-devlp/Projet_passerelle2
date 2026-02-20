@@ -1,0 +1,89 @@
+.comment-section {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #eceadc;
+  border-radius: 8px;
+}
+
+.comment-as {
+  font-size: 0.9em;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+textarea#contenu {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #eceadc;
+  border-radius: 5px;
+  background-color: #fff;
+  font-family: inherit;
+  resize: vertical;
+}
+
+.btn-submit {
+  background-color: #f39c12;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-submit:hover {
+  background-color: #e67e22;
+}
+
+.login-required {
+  text-align: center;
+  padding: 20px;
+  border: 2px dashed #eceadc;
+}
+
+.h3-commentaire {
+  text-align: center;
+}
+
+.button-log {
+  text-decoration: none;
+  background-color: #f39c12;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+// Parie commentaire
+
+.comment-single {
+  background: rgba(255, 255, 255, 0.5);
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border-left: 4px solid #f39c12;
+}
+
+.comment-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.comments-display {
+  margin: 40px 75px;
+}

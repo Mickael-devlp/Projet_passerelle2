@@ -1,0 +1,58 @@
+.container_video {
+  margin: 0 25px 25px;
+  padding: 15px;
+}
+
+/* Le conteneur doré */
+.video-card {
+  display: flex;
+  align-items: center;
+  border: 2px solid #d4af37;
+  padding: 15px;
+  margin-bottom: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  min-height: 200px;
+  padding: 40px 20px;
+}
+
+.avatar {
+  width: 150px;
+  height: 150px;
+  // border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.content-wrapper {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-family: serif; /* PStyle à modifier */
+}
+
+/* Conteneur des liens en ligne */
+.links-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  width: 100%;
+}
+
+.link-item {
+  text-decoration: none;
+  color: #020c1d;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.link-item:hover {
+  text-decoration: underline;
+}

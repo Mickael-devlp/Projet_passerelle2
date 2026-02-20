@@ -1,0 +1,239 @@
+/*ID */
+
+#login-body {
+  max-width: 450px;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: white;
+  border-radius: 5px;
+  padding: 50px;
+  margin-top: 50px;
+}
+
+/* Classe */
+.building {
+  height: 100vh;
+  position: relative;
+  background-image: url("/MESBG/public/images/fond_ecran_TDM.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  // filter: brightness(
+  //   1.4
+  // ); /* 1 = normal, 1.1 = plus clair et 1.9 très clair ! */
+}
+
+.building::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(
+    255,
+    255,
+    255,
+    0.4
+  ); /* plus on se rapporche de 0 et plus c'est blanc alors que 1, c'est foncé */
+  z-index: 1;
+}
+
+// .building h1 {
+//   position: relative;
+//   z-index: 2; /* pour que le texte reste au-dessus */
+//   font-size: 3rem;
+// }
+
+/* Les formulaires de co et d'inscription */
+
+.h2-connexion {
+  font-size: 2rem;
+  text-align: center;
+}
+
+form {
+  margin: 2rem 0;
+}
+
+/* Classe */
+.container_log {
+  width: 100%;
+  max-width: 30rem;
+  background-color: transparent;
+  padding: 3rem 2rem;
+  border-radius: 10px;
+  color: rgb(0, 0, 0);
+  border: rgb(214, 238, 78) solid 2px;
+  /* Backdrop permet de rendre l'élément opaque */
+  backdrop-filter: blur(3px);
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+}
+
+.page_log {
+  width: 50%; /*Chaque section fait 50% pour pouvoir switch d'un élément à l'autre*/
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 200%; /*Permet d'nglober les deux sections et les deux espaces pour glisser de l'un à l'autre*/
+}
+
+.hidden_log {
+  transform: translateX(-50%);
+}
+
+.login_log .register {
+  flex: 1;
+}
+
+.inputbox {
+  position: relative;
+  margin: 1rem 0;
+}
+.inputbox input {
+  width: 100%;
+  height: 3rem;
+  border: none;
+  outline: none;
+  /* Barre de trait sous les inputs */
+  border-bottom: white solid 2px;
+  background-color: transparent;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.inputbox label {
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+
+.inputbox ion-icon {
+  position: absolute;
+  right: 5px;
+  top: 20px;
+}
+
+.forgot {
+  display: flex;
+  justify-content: center;
+}
+.forgot a {
+  text-decoration: none;
+  font-size: 1rem;
+  margin: 3px;
+  color: azure;
+  font-weight: 600;
+}
+.forgot a:hover {
+  text-decoration: underline;
+}
+.button_log {
+  width: 100%;
+  height: 3rem;
+  font-size: 1.5rem;
+  border: none;
+  outline: none;
+  font-weight: 600;
+  border-radius: 2rem;
+  margin: 1.5rem 0;
+}
+.button_log:hover {
+  cursor: pointer;
+}
+
+.register_option {
+  display: flex;
+  justify-content: center;
+}
+.register_option a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  margin-left: 8px;
+}
+.register_option a:hover {
+  text-decoration: underline;
+}
+
+/* Pour l'oeil du MDP */
+
+// .inputbox input {
+//   width: 150%;
+// }
+.inputbox #togglePassword {
+  position: absolute;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+  font-size: 1rem;
+}
+
+// taille de la checkbox
+
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+
+  width: 24px;
+  height: 24px;
+
+  border: 2px solid #555;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.1);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+}
+/* Quand on coche */
+input[type="checkbox"]:checked {
+  background-color: #ffffff;
+  border-color: #3498db;
+}
+
+input[type="checkbox"]:checked::after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  /* Création d'un anneau */
+  border: 3px solid #ffd700;
+  border-radius: 50%;
+
+  /* Permet de faire un effet */
+  box-shadow: 0 0 5px #ffae00;
+}
+
+input[type="checkbox"]:hover {
+  border-color: #ffd700;
+}
+
+.container-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+.error-message {
+  color: #ff4d4d;
+  font-size: 1.2em;
+  margin-bottom: 15px;
+  text-align: center;
+  background: rgba(255, 0, 0, 0.1);
+  padding: 5px;
+  border-radius: 5px;
+}

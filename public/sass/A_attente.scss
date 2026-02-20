@@ -1,0 +1,35 @@
+.building {
+  height: 100vh;
+  position: relative;
+  background-image: url("/MESBG/public/images/fond_ecran_TDM.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  // filter: brightness(
+  //   1.4
+  // ); /* 1 = normal, 1.1 = plus clair et 1.9 très clair ! */
+}
+
+.building::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(
+    255,
+    255,
+    255,
+    0.4
+  ); /* plus on se rapporche de 0 et plus c'est blanc alors que 1, c'est foncé */
+  z-index: 1;
+}
+
+.building .h1-building {
+  position: relative;
+  z-index: 2; /* pour que le texte reste au-dessus */
+  font-size: 3rem;
+}

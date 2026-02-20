@@ -1,0 +1,88 @@
+// ID
+
+// Classe
+.h2_Livre_v6 {
+  font-family: MiddleEarth;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.official_campagn {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 80px;
+  justify-content: center;
+}
+.official_campagn_1 {
+  display: grid;
+  justify-content: center;
+}
+
+.campagne00 {
+  border-radius: 20px;
+  width: 220px;
+  height: 330px;
+  //   object-fit: contain;
+}
+
+.hidden {
+  display: none;
+}
+
+.toggleBtn {
+  font-size: 0.9rem;
+  padding: 5px 10px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background-color: #1f4923;
+  transition: background-color 0.3s ease;
+  color: #dddbde;
+}
+
+.toggleBtn:hover {
+  background-color: #466e48;
+}
+
+.toggleBtn:active {
+  background-color: #faed9b;
+  transform: translateY(
+    1px
+  ); // Permet de mettre un effet d'enfoncement (intéressant)
+  color: black;
+}
+
+.h2_text {
+  text-align: center;
+}
+
+// Commun à tous
+
+.fond_ecran_map {
+  height: auto;
+  position: relative;
+  background-image: url("/MESBG/public/images/fond_ecran_TDM.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.fond_ecran_map:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(
+    255,
+    255,
+    255,
+    0.7
+  ); /* plus on se rapporche de 0 et plus c'est blanc alors que 1, c'est foncé */
+  z-index: 1;
+}
+
+.behind {
+  position: relative;
+  z-index: 2; /* pour que le texte reste au-dessus */
+  // font-size: 3rem;
+}
